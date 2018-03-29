@@ -40,7 +40,7 @@ describe('Merge sort', () => {
   })
 
   it('Should be able to sort an array of n number', () => {
-    let array = randomArray(101000, 100);
+    let array = randomArray(100000, 100);
     let result = mergeSort(array);
 
     assert.deepEqual(result, array.sort(function (a, b) {return a - b}))
